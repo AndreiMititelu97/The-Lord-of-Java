@@ -13,6 +13,22 @@ public class Parameters {
         this.noLives = noLives;
     }
 
+    public String getOS(){
+        return OS;
+    }
+
+    public String getGamePATH(){
+        return gamePATH;
+    }
+
+    public String getCredentials(){
+        return credentials;
+    }
+
+    public int getNoLives(){
+        return noLives;
+    }
+
     @Override
     public String toString(){
         return String.format("OS: %s\n" +
