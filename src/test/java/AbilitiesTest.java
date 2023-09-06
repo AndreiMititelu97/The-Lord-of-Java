@@ -38,51 +38,36 @@ public class AbilitiesTest {
     }
 
     @Test
-    void testCompareToBiggerStamina(){
+    void testCompareTo(){
         Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
+
+        //Test lower stamina
         Abilities other = new Abilities(stamina + 1, speed, agility);
         assertEquals(-1, abilities.compareTo(other));
-    }
 
-    @Test
-    void testCompareToLowerStamina(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-        Abilities other = new Abilities(stamina - 1, speed, agility);
+        //test bigger stamina
+        other = new Abilities(stamina - 1, speed, agility);
         assertEquals(1, abilities.compareTo(other));
-    }
 
-    @Test
-    void testCompareToBiggerSpeed(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-        Abilities other = new Abilities(stamina, speed + 1, agility);
+        //Test lower speed
+        other = new Abilities(stamina, speed + 1, agility);
         assertEquals(-1, abilities.compareTo(other));
-    }
 
-    @Test
-    void testCompareToLowerSpeed(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-        Abilities other = new Abilities(stamina, speed - 1, agility);
+        //Test bigger speed
+        other = new Abilities(stamina, speed - 1, agility);
         assertEquals(1, abilities.compareTo(other));
-    }
 
-    @Test
-    void testCompareToBiggerAgility(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-        Abilities other = new Abilities(stamina, speed, agility + 1);
+        //Test lower agility
+        other = new Abilities(stamina, speed, agility + 1);
         assertEquals(-1, abilities.compareTo(other));
-    }
 
-    @Test
-    void testCompareToLowerAgility(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-        Abilities other = new Abilities(stamina, speed, agility - 1);
+        //Test bigger agility
+        other = new Abilities(stamina, speed, agility - 1);
         assertEquals(1, abilities.compareTo(other));
-    }
 
-    @Test
-    void testCompareToLowerEquals(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-        Abilities other = new Abilities(stamina, speed, agility);
+        //Test equals objects
+        other = new Abilities(stamina, speed, agility);
         assertEquals(0, abilities.compareTo(other));
+
     }
 }
