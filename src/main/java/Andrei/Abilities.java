@@ -11,6 +11,18 @@ public class Abilities implements Comparable<Abilities>{
         this.agility = agility;
     }
 
+    public double getStamina(){
+        return stamina;
+    }
+
+    public double getSpeed(){
+        return speed;
+    }
+
+    public int getAgility(){
+        return agility;
+    }
+
     @Override
     public int compareTo(Abilities other){
         if (this.stamina > other.stamina){
@@ -38,7 +50,7 @@ public class Abilities implements Comparable<Abilities>{
         }
     }
 
-    void update(double stamina, double speed, int agility){
+    public void update(double stamina, double speed, int agility){
         this.stamina += stamina;
         this.speed += speed;
         this.agility += agility;
