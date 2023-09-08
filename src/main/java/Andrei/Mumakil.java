@@ -12,7 +12,7 @@ public class Mumakil extends Creature {
 
     @Override
     public String toString(){
-        return String.format(super.toString() +
-                "A creature of type Mumakil");
+        return String.format(super.toString() + "\n" +
+                "A creature of type Mumakil.");
     }
 }

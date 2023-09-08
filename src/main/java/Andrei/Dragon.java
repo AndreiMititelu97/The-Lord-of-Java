@@ -27,8 +27,8 @@ public class Dragon extends Creature implements IBurn{
 
     @Override
     public String toString(){
-        return String.format(super.toString() +
-                "Flames power: %f\n" +
+        return String.format(super.toString() + "\n" +
+                "Flames power: %.1f\n" +
                 "Fly speed: %d", flamesPower, flySpeed);
     }
 }

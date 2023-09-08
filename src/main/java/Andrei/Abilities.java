@@ -56,8 +56,12 @@ public class Abilities implements Comparable<Abilities>{
         this.agility += agility;
     }
 
+    public int powerDifferenceApprox(Abilities other){
+        return (int)Math.abs(this.stamina - other.stamina);
+    }
+
     @Override
     public String toString(){
-        return String.format("Player has a power of: %.0f, the speed: %.0f and the agility: %d.", stamina, speed, agility);
+        return String.format("Player has a power of: %.1f, the speed: %.1f and the agility: %d", stamina, speed, agility);
     }
 }

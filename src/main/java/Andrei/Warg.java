@@ -20,9 +20,7 @@ public class Warg extends Creature implements IBite {
 
     @Override
     public String toString(){
-        return String.format(super.toString() +
-                "Bite power: %f", bitePower);
+        return String.format(super.toString() + "\n" +
+                "Bite Power: %.1f", bitePower);
     }
-
-
 }
