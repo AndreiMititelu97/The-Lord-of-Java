@@ -1,5 +1,5 @@
-package LordOfJava.Game.Creatures;
-import LordOfJava.Game.Creatures.Creature;
+package Game;
+import Game.Creatures.Creature;
 
 import java.util.HashMap;
 import java.util.ArrayList;

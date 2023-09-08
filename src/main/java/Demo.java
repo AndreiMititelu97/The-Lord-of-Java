@@ -1,6 +1,7 @@
-package LordOfJava.Game.Creatures;
-
-import LordOfJava.Game.Creatures.Abilities.Dragon;
+import Game.LordOfJava;
+import Game.Creatures.Abilities.Dragon;
+import Game.Creatures.Mumakil;
+import Game.Creatures.Warg;
 
 public class Demo {
     public static void main(String[] args){

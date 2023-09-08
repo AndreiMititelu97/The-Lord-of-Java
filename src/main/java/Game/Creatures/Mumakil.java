@@ -1,4 +1,4 @@
-package LordOfJava.Game.Creatures;
+package Game.Creatures;
 
 public class Mumakil extends Creature {
     public Mumakil(double stamina, double speed, int agility, String nickname, long score){

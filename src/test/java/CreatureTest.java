@@ -2,9 +2,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import LordOfJava.Game.Creatures.Abilities.Dragon;
-import LordOfJava.Game.Creatures.Warg;
-import LordOfJava.Game.Creatures.Mumakil;
+import Game.Creatures.Abilities.Dragon;
+import Game.Creatures.Warg;
+import Game.Creatures.Mumakil;
 
 @DisplayName("Test Creature class")
 public class CreatureTest {

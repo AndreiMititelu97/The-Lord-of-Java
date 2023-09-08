@@ -1,7 +1,7 @@
-package LordOfJava.Game.Creatures;
+package Game.Creatures;
 
-import LordOfJava.Game.Creatures.Abilities.Abilities;
-import LordOfJava.Game.Creatures.Abilities.ICreature;
+import Game.Creatures.Abilities.Abilities;
+import Game.Creatures.Abilities.ICreature;
 
 abstract public class Creature implements ICreature, Comparable<Creature> {
     private Abilities abilities; // Stats for a creature: Stamina, Speed and Agility
