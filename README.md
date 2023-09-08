@@ -52,6 +52,7 @@ Methods:
 - Add a creature to the cohort
 - Get cohort size
 - Get all members of the cohort
+- Gather all creature in order of their power
 
 ## LordOfJava Class
 
