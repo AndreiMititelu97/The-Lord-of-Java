@@ -4,7 +4,7 @@
 
   <groupId>Andrei</groupId>
   <artifactId>The-Lord-of-Java</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>The-Lord-of-Java</name>
