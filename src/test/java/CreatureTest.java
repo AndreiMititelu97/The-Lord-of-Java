@@ -1,8 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import Andrei.Creature;
 import Andrei.Dragon;
+import Andrei.Warg;
 
 @DisplayName("Test Creature class")
 public class CreatureTest {
@@ -13,6 +13,7 @@ public class CreatureTest {
     private final long score = 1000;
     private final double flamesPower = 5.5;
     private final int flySpeed = 1;
+    private final double bitePower = 1;
 
     // Test Creature fields
     @Test
@@ -40,6 +41,15 @@ public class CreatureTest {
         assertEquals(stamina + 2, dragon.getAbilities().getStamina());
         assertEquals(speed + 1, dragon.getAbilities().getSpeed());
         assertEquals(agility + 3, dragon.getAbilities().getAgility());
+    }
+
+    @Test
+    void testWargPowerUp(){
+        Warg warg = new Warg(stamina, speed, agility, nickname, score, bitePower);
+        warg.powerUp(2, 1, 1);
+        assertEquals(stamina + 1, warg.getAbilities().getStamina());
+        assertEquals(speed + 4, warg.getAbilities().getSpeed());
+        assertEquals(agility + 1, warg.getAbilities().getAgility());
     }
 
 
