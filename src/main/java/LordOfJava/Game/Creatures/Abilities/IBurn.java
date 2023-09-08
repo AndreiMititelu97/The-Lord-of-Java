@@ -1,4 +1,4 @@
-package Andrei.Creatures.Abilities;
+package LordOfJava.Game.Creatures.Abilities;
 
 public interface IBurn {
     double getFlamesPower();

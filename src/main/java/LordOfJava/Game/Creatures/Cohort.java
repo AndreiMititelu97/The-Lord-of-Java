@@ -1,5 +1,5 @@
-package Andrei;
-import Andrei.Creatures.Creature;
+package LordOfJava.Game.Creatures;
+import LordOfJava.Game.Creatures.Creature;
 
 import java.util.HashMap;
 import java.util.ArrayList;

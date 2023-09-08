@@ -2,11 +2,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import java.util.ArrayList;
-import Andrei.Creatures.Abilities.Dragon;
+import LordOfJava.Game.Creatures.Abilities.Dragon;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import Andrei.Cohort;
+import LordOfJava.Game.Creatures.Cohort;
 
 @DisplayName("Test Cohort class")
 public class CohortTest {
