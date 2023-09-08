@@ -3,6 +3,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import Andrei.Dragon;
 import Andrei.Warg;
+import Andrei.Mumakil;
 
 @DisplayName("Test Creature class")
 public class CreatureTest {
@@ -50,6 +51,15 @@ public class CreatureTest {
         assertEquals(stamina + 1, warg.getAbilities().getStamina());
         assertEquals(speed + 4, warg.getAbilities().getSpeed());
         assertEquals(agility + 1, warg.getAbilities().getAgility());
+    }
+
+    @Test
+    void testMumakilPowerUp(){
+        Mumakil mumakil = new Mumakil(stamina, speed, agility, nickname, score);
+        mumakil.powerUp(1, 1, 1);
+        assertEquals(stamina + 0.75d, mumakil.getAbilities().getStamina());
+        assertEquals(speed + 11, mumakil.getAbilities().getSpeed());
+        assertEquals(agility + 1, mumakil.getAbilities().getAgility());
     }
 
 
