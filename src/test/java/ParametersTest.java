@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import Andrei.Parameters;
+import LordOfJava.Game.Creatures.Parameters;
 @DisplayName("Test Parameter class")
 public class ParametersTest {
     private final String os = "myOS";

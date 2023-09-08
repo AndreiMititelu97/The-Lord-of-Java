@@ -1,9 +1,6 @@
-package Andrei;
+package LordOfJava.Game.Creatures;
 
-import Andrei.Creatures.Abilities.Dragon;
-import Andrei.Creatures.Creature;
-import Andrei.Creatures.Mumakil;
-import Andrei.Creatures.Warg;
+import LordOfJava.Game.Creatures.Abilities.Dragon;
 
 import java.util.ArrayList;
 

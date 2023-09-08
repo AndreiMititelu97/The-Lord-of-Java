@@ -1,4 +1,4 @@
-package Andrei.Creatures.Abilities;
+package LordOfJava.Game.Creatures.Abilities;
 
 public class Abilities implements Comparable<Abilities>{
     private double stamina;

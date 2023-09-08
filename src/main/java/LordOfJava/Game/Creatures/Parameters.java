@@ -1,4 +1,4 @@
-package Andrei;
+package LordOfJava.Game.Creatures;
 
 public class Parameters {
     private String OS; // Operating system

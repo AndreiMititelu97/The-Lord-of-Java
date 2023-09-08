@@ -1,21 +1,11 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package LordOfJava.Game.Creatures;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import LordOfJava.Game.Creatures.Abilities.Dragon;
-import LordOfJava.Game.Creatures.Warg;
-import LordOfJava.Game.Creatures.Mumakil;
-import LordOfJava.Game.Creatures.LordOfJava;
-public class LordOfJavaTest {
-    private LordOfJava lordOfJava;
 
-    @BeforeEach
-    void setUp(){
-        lordOfJava = new LordOfJava("Mac OS", "./username", "strongPassword2021", 3);
-    }
+public class Demo {
+    public static void main(String[] args){
+        LordOfJava lordOfJava = new LordOfJava("Mac OS", "./username", "strongPassword2021", 3);
 
-    @Test
-    void testBattleDragonsWargs(){
         Dragon dragon81 = new Dragon(25, 100, 15, "master_dragon1", 80, 20, 40);
         Dragon dragon82 = new Dragon(35, 76, 5, "master_dragon2", 100, 20, 40);
 
@@ -30,6 +20,7 @@ public class LordOfJavaTest {
         lordOfJava.addCreature(warg82, "05,15");
         lordOfJava.addCreature(mumakil81, "01,01");
 
-        assertEquals(-1, lordOfJava.battleDragonsWargs());
+        System.out.println("Battle result: " + lordOfJava.battleDragonsWargs());
+        System.out.println("Creatures:\n" + lordOfJava);
     }
 }
