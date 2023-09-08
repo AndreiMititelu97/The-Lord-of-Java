@@ -1,4 +1,4 @@
-package Andrei;
+package Andrei.Creatures;
 
 public class Mumakil extends Creature {
     public Mumakil(double stamina, double speed, int agility, String nickname, long score){

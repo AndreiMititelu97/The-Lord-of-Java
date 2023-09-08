@@ -1,4 +1,4 @@
-package Andrei;
+package Andrei.Creatures.Abilities;
 
 public class Abilities implements Comparable<Abilities>{
     private double stamina;

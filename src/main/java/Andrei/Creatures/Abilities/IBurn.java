@@ -1,4 +1,4 @@
-package Andrei;
+package Andrei.Creatures.Abilities;
 
 public interface IBurn {
     double getFlamesPower();

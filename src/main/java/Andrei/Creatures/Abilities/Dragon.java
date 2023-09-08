@@ -1,6 +1,8 @@
-package Andrei;
+package Andrei.Creatures.Abilities;
 
-public class Dragon extends Creature implements IBurn{
+import Andrei.Creatures.Creature;
+
+public class Dragon extends Creature implements IBurn {
     private double flamesPower;
     private int flySpeed;
 
