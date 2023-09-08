@@ -1,6 +1,6 @@
-package LordOfJava.Game.Creatures;
+package Game.Creatures;
 
-import LordOfJava.Game.Creatures.Abilities.IBite;
+import Game.Creatures.Abilities.IBite;
 
 public class Warg extends Creature implements IBite {
     private double bitePower;

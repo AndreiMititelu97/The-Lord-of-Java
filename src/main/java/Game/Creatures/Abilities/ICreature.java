@@ -1,4 +1,4 @@
-package LordOfJava.Game.Creatures.Abilities;
+package Game.Creatures.Abilities;
 
 public interface ICreature {
     String getNickname();

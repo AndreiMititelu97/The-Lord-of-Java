@@ -1,6 +1,6 @@
-package LordOfJava.Game.Creatures.Abilities;
+package Game.Creatures.Abilities;
 
-import LordOfJava.Game.Creatures.Creature;
+import Game.Creatures.Creature;
 
 public class Dragon extends Creature implements IBurn {
     private double flamesPower;
