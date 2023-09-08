@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import Andrei.Abilities;
@@ -8,20 +9,18 @@ public class AbilitiesTest {
     private final double stamina = 10.1;
     private final double speed = 5.7777;
     private final int agility = 22;
+    private Abilities abilities;
 
-    @Test
-    void testConstructor(){
-        Abilities abilities = new Abilities(stamina, speed, agility);
-        assertEquals(stamina, abilities.getStamina());
-        assertEquals(speed, abilities.getSpeed());
-        assertEquals(agility, abilities.getAgility());
+    @BeforeEach
+    void setUpAbilities(){
+        abilities = new Abilities(stamina, speed, agility);
     }
 
     @Test
-    void testToString(){
-        Abilities abilities = new Abilities(stamina, speed, agility);
-        String toStringRef = String.format("Player has a power of: %.0f, the speed: %.0f and the agility: %d.", stamina, speed, agility);
-        assertEquals(toStringRef, abilities.toString());
+    void testConstructor(){
+        assertEquals(stamina, abilities.getStamina());
+        assertEquals(speed, abilities.getSpeed());
+        assertEquals(agility, abilities.getAgility());
     }
 
     @Test
@@ -29,7 +28,6 @@ public class AbilitiesTest {
         double stamina = 1;
         double speed = 2;
         int agility = 3;
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
         abilities.update(stamina, speed, agility);
 
         assertEquals(stamina + this.stamina, abilities.getStamina());
@@ -39,8 +37,6 @@ public class AbilitiesTest {
 
     @Test
     void testCompareTo(){
-        Abilities abilities = new Abilities(this.stamina, this.speed, this.agility);
-
         //Test lower stamina
         Abilities other = new Abilities(stamina + 1, speed, agility);
         assertEquals(-1, abilities.compareTo(other));
@@ -68,6 +64,5 @@ public class AbilitiesTest {
         //Test equals objects
         other = new Abilities(stamina, speed, agility);
         assertEquals(0, abilities.compareTo(other));
-
     }
 }

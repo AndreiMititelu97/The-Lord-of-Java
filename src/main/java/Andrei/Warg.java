@@ -3,7 +3,7 @@ package Andrei;
 public class Warg extends Creature implements IBite {
     private double bitePower;
 
-    public Warg(double stamina, double speed, int agility, String nickname, long score, double bitePwer){
+    public Warg(double stamina, double speed, int agility, String nickname, long score, double bitePower){
         super(stamina, speed, agility, nickname, score);
         this.bitePower = bitePower;
     }
