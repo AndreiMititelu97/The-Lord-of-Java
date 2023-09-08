@@ -1,10 +1,10 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.DisplayName;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import Andrei.Dragon;
-import Andrei.Warg;
-import Andrei.Mumakil;
+import Andrei.Creatures.Abilities.Dragon;
+import Andrei.Creatures.Warg;
+import Andrei.Creatures.Mumakil;
 import Andrei.LordOfJava;
 public class LordOfJavaTest {
     private LordOfJava lordOfJava;

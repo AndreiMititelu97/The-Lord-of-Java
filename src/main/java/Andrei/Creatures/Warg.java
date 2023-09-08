@@ -1,4 +1,6 @@
-package Andrei;
+package Andrei.Creatures;
+
+import Andrei.Creatures.Abilities.IBite;
 
 public class Warg extends Creature implements IBite {
     private double bitePower;

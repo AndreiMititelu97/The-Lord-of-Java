@@ -1,4 +1,6 @@
 package Andrei;
+import Andrei.Creatures.Creature;
+
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Collections;
