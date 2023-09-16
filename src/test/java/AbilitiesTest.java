@@ -2,7 +2,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Nested;
 import Game.Creatures.Abilities.Abilities;
 
 @DisplayName("Test Abilities class")
@@ -36,53 +35,34 @@ public class AbilitiesTest {
         assertEquals(agility + this.agility, abilities.getAgility());
     }
 
-    @Nested
-    class compareToTest{
-        private Abilities other;
-        @BeforeEach
-        void init(){
-            other = new Abilities(stamina, speed, agility);
-        }
-        @Test
-        void testLowerStamina(){
-             other.update(1, 0, 0);
-            assertEquals(-1, abilities.compareTo(other));
-        }
+    @Test
+    void testCompareTo(){
+        //Test lower stamina
+        Abilities other = new Abilities(stamina + 1, speed, agility);
+        assertEquals(-1, abilities.compareTo(other));
 
-        @Test
-        void testBiggerStamina(){
-            other.update(-1, 0, 0);
-            assertEquals(1, abilities.compareTo(other));
-        }
+        //test bigger stamina
+        other = new Abilities(stamina - 1, speed, agility);
+        assertEquals(1, abilities.compareTo(other));
 
-        @Test
-        void testLowerSpeed(){
-            other.update(0, 1, 0);
-            assertEquals(-1, abilities.compareTo(other));
-        }
+        //Test lower speed
+        other = new Abilities(stamina, speed + 1, agility);
+        assertEquals(-1, abilities.compareTo(other));
 
-        @Test
-        void testBiggerSpeed(){
-            other.update(0, -1, 0);
-            assertEquals(1, abilities.compareTo(other));
-        }
+        //Test bigger speed
+        other = new Abilities(stamina, speed - 1, agility);
+        assertEquals(1, abilities.compareTo(other));
 
-        @Test
-        void testLowerAgility(){
-            other.update(0, 0, 1);
-            assertEquals(-1, abilities.compareTo(other));
-        }
+        //Test lower agility
+        other = new Abilities(stamina, speed, agility + 1);
+        assertEquals(-1, abilities.compareTo(other));
 
-        @Test
-        void testBiggerAgility(){
-            other.update(0, 0, -1);
-            assertEquals(1, abilities.compareTo(other));
-        }
+        //Test bigger agility
+        other = new Abilities(stamina, speed, agility - 1);
+        assertEquals(1, abilities.compareTo(other));
 
-        @Test
-        void testEqual(){
-            other.update(0, 0, 0);
-            assertEquals(0, abilities.compareTo(other));
-        }
+        //Test equals objects
+        other = new Abilities(stamina, speed, agility);
+        assertEquals(0, abilities.compareTo(other));
     }
 }
